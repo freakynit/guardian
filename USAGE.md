@@ -84,7 +84,7 @@ If the circuit breaker is open (as demonstrated in `testCircuitBreakerOpenAndRes
 Sometimes you need to abort an operation early:
 - **Abort based on result:** Use `abortIf(Predicate)` to abort if the result meets a condition.
 - **Abort on specific exception:** Use `abortOn(ExceptionType.class)` to immediately abort when a specified exception is thrown.
-- **Abort based on flag:** Use `abortWhen(boolean)` to unconditionally abort when true.
+- **Abort based on flag:** Use `abortWhen(boolean)` to conditionally abort on a boolean condition.
 
 Examples:
 
